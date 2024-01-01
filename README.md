@@ -1,2 +1,2 @@
 # space game
- space game bruh
+ Top down shooter space game for funsies ^^
