@@ -11,6 +11,6 @@ public class bulletcollector : MonoBehaviour
             Destroy(collision.gameObject);
         }
         // test hihi
-        //test vscode
+        //test 
     }
 }
