@@ -10,5 +10,6 @@ public class bulletcollector : MonoBehaviour
             stats.bulletsnb++;
             Destroy(collision.gameObject);
         }
+        // test hihi
     }
 }
