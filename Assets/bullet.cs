@@ -8,5 +8,6 @@ public class bullet : MonoBehaviour
     {
         transform.Translate(Vector2.up*speed*Time.deltaTime);
         Destroy(gameObject,2);
+        //test
     }
 }
