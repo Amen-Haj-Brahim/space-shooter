@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using Unity.VisualScripting;
 public class movement : MonoBehaviour
 {
     private Rigidbody2D rb;
@@ -18,13 +19,14 @@ public class movement : MonoBehaviour
         transform.up = dir;
         movedirX = Input.GetAxisRaw("Horizontal");
         movedirY = Input.GetAxisRaw("Vertical");
-        if (movedirX!=0&& movedirY != 0)
+        rb.velocity=new Vector2(movedirX, movedirY).normalized*movespeed;
+        /*if (movedirX!=0&& movedirY != 0)
         {
              rb.velocity= new Vector2(movedirX, movedirY)*movespeed/(float)Math.Sqrt(2);
         }
         else
         {
             rb.velocity = new Vector2(movedirX, movedirY ) * movespeed;
-        }
+        }*/
     }
 }
