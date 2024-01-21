@@ -13,9 +13,9 @@ public class movement : MonoBehaviour
     }
     void Update()
     {
-        Vector3 aim=Input.mousePosition;
-        aim=Camera.main.ScreenToWorldPoint(aim);
-        Vector2 dir=new Vector2(aim.x-transform.position.x, aim.y-transform.position.y);
+        Vector3 mousePos=Input.mousePosition;
+        mousePos=Camera.main.ScreenToWorldPoint(mousePos);
+        Vector2 dir=new Vector2(mousePos.x-transform.position.x, mousePos.y-transform.position.y);
         transform.up = dir;
         movedirX = Input.GetAxisRaw("Horizontal");
         movedirY = Input.GetAxisRaw("Vertical");
